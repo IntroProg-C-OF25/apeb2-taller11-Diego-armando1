@@ -39,7 +39,6 @@ public class ejercicio4_PlanillaLuz {
                 break;
             case 2:
                 if (nombre == null && cedula == null) {
-                    System.out.println("Debe ingresar primero su nombre y cedula de identificacion.");
                     System.out.print("Ingrese su nombre y apellido: ");
                     nombre = teclado.nextLine();
                     System.out.print("Ingrese su cedula de identidad: ");
@@ -53,12 +52,22 @@ public class ejercicio4_PlanillaLuz {
                 System.out.println("Opcion no valida");
         }
     }
-
     public static double planillaLuz(double valorKilovatio, double kilovatiosConsumidos) {
         return valorKilovatio * kilovatiosConsumidos;
     }
-
     public static double precioPredio(double valorInmueble) {
         return valorInmueble * 0.02;
     }
 }
+/***
+ * run:
+ * Seleccione una opcion: 
+ * 1. Calcular el valor de la planilla de luz
+ * 2. Calcular el valor del predio
+ * 1
+ * Ingrese su nombre y apellido: Diego Guaman
+ * Ingrese su cedula de identidad: 1950768903
+ * Ingrese el valor del kilovatio: 9
+ * Ingrese el valor del kilovatio consumido por mes: 3
+ * Cliente Diego Guaman con c�dula 1950768903 debe cancelar el valor de 27,00
+ */
